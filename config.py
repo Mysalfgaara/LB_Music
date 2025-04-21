@@ -8,25 +8,25 @@ from pyrogram import filters
 load_dotenv()
 
 # Get this value from my.telegram.org/apps
-API_ID = 20886171
-API_HASH = "9659476a2f6782e362bd00bac2096bdc"
+API_ID = int(getenv("API_ID", "20886171"))
+API_HASH = getenv("API_HASH", "9659476a2f6782e362bd00bac2096bdc")
 
 # Get your token from @BotFather on Telegram.
-BOT_TOKEN = "8011867852:AAGGNevpwII9RdUHRaMm_DfUAor6ExF_osU"
+BOT_TOKEN = getenv("BOT_TOKEN", "8011867852:AAGGNevpwII9RdUHRaMm_DfUAor6ExF_osU")
 
 # Get your mongo url from cloud.mongodb.com
-MONGO_DB_URI = "mongodb+srv://sayanray089:sayanray089@cluster0.zbvi7fx.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://sayanray089:sayanray089@cluster0.zbvi7fx.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", None)
 PRIVATE_BOT_MODE = getenv("PRIVATE_BOT_MODE", None)
 
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 900))
 
 # Chat id of a group for logging bot's activities
-LOGGER_ID = -1002566763639
-LOG_GROUP_ID = -1002566763639
+LOGGER_ID = int(getenv("LOGGER_ID", "-1002566763639"))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1002566763639"))
 
 # Get this value Telegram id
-OWNER_ID = 7809385991
+OWNER_ID = int(getenv("OWNER_ID", "5016109398"))
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
@@ -74,7 +74,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", 1073741824))
 
 
 # Get your pyrogram v2 session
-STRING1 = "BQE-spsAb_OT2PhzPqbbjIuW1NIBRrk6oS33uArM8ybARvxEvM9-gGzYonJ3TURSCgwps07Da-7-J5u8NBVtPo0lFCkg3YyoU-LaTKziFiVoUy_E87NNbwTNX6NcX6c7QTudthlR-keR3g3XI6eo5lBNLxgEVYm8_ApXI4AkmMGzmM-DBGFLszrdN6Z6MrQ5eTQa1bmcIIBiJStu2lx6ortL_yIHegUhREkpcZLaQXniLRXXleLtRAWr681rsAVmdrUYhhdyNhWhMWiR0t70metn4OSTkdRmplHtSysX-gKCkTdtZn-zPNbvdfnruJMqnEhOqdds6XruOF2oCx8_T7RtVsj4yQAAAAFvWoNnAA"
+STRING1 = getenv("STRING_SESSION",  "BQE-spsAb_OT2PhzPqbbjIuW1NIBRrk6oS33uArM8ybARvxEvM9-gGzYonJ3TURSCgwps07Da-7-J5u8NBVtPo0lFCkg3YyoU-LaTKziFiVoUy_E87NNbwTNX6NcX6c7QTudthlR-keR3g3XI6eo5lBNLxgEVYm8_ApXI4AkmMGzmM-DBGFLszrdN6Z6MrQ5eTQa1bmcIIBiJStu2lx6ortL_yIHegUhREkpcZLaQXniLRXXleLtRAWr681rsAVmdrUYhhdyNhWhMWiR0t70metn4OSTkdRmplHtSysX-gKCkTdtZn-zPNbvdfnruJMqnEhOqdds6XruOF2oCx8_T7RtVsj4yQAAAAFvWoNnAA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
@@ -93,13 +93,13 @@ START_IMG_URL = getenv(
     "START_IMG_URL", "https://te.legra.ph/file/62c76ac2095332a0ede75.jpg"
 )
 PING_IMG_URL = getenv(
-    "PING_IMG_URL", "https://te.legra.ph/file/4f59fb748e1990acfa297.jpg"
+    "PING_IMG_URL", "https://te.legra.ph/file/b8a0c1a00db3e57522b53.jpg"
 )
-PLAYLIST_IMG_URL = "https://te.legra.ph/file/14eb59ea7d31229d8d751.jpg"
-STATS_IMG_URL = "https://te.legra.ph/file/4310ea5f523520b2b765b.jpg"
-TELEGRAM_AUDIO_URL = "https://te.legra.ph/file/923c1faac33d8c70335dc.jpg"
-TELEGRAM_VIDEO_URL = "https://te.legra.ph/file/6c66f8b192532fe758e82.jpg"
-STREAM_IMG_URL = "https://te.legra.ph/file/ebc4dc6357be06e08a3ed.jpg"
+PLAYLIST_IMG_URL = "https://te.legra.ph/file/4ec5ae4381dffb039b4ef.jpg"
+STATS_IMG_URL = "https://te.legra.ph/file/e906c2def5afe8a9b9120.jpg"
+TELEGRAM_AUDIO_URL = "https://te.legra.ph/file/6298d377ad3eb46711644.jpg"
+TELEGRAM_VIDEO_URL = "https://te.legra.ph/file/6298d377ad3eb46711644.jpg"
+STREAM_IMG_URL = "https://te.legra.ph/file/bd995b032b6bd263e2cc9.jpg"
 SOUNCLOUD_IMG_URL = "https://te.legra.ph/file/d339f390ec168c19879c6.jpg"
 YOUTUBE_IMG_URL = "https://te.legra.ph/file/ee0cd53ab73f08f4a3627.jpg"
 SPOTIFY_ARTIST_IMG_URL = "https://te.legra.ph/file/5f9fb5bba66021c782d96.jpg"
